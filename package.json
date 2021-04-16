@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "nodemon server.js"
+  },
+  "engines": {  
+    "node": "12.18.2"
+  },
+  "dependencies": {
+    "axios": "0.19.2",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "lodash": "^4.17.21",
+    "nodemon": "2.0.4"
+  }
+}
