@@ -1,4 +1,4 @@
-export const BASE_API_URL = "http://localhost:5000";
+export const BASE_API_URL = "https://meowjobapp.herokuapp.com";
 
 export const findLink = (html, company_url) => {
   let links = html.match(
